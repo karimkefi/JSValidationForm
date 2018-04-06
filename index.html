@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form validation challenge</title>
+    <link rel="stylesheet" type="text/css" href= "style.css"/>
+</head>
+
+<body>
+<section class="container">
+    <h1>Form Validation Challenge</h1>
+    <form id="formID" class="text-input-field">
+        <div>
+            <label for="field1">Required field:
+                <span id="req_1" class="req">*</span>
+                <span id="field1Warning" class="req"></span>
+            </label>
+            <input type="text" name="field1" id="field1">
+        </div>
+        <div>
+            <label for="field2">Max length 8:</label>
+            <span id="field2Warning" class="req"></span>
+            <input type="text" name="field2" id="field2">
+        </div>
+        <div>
+            <label for="field3">Required - Min length 10 - Max length 25:<span id="req_1" class="req">*</span></label>
+            <span id="field3Warning" class="req"></span>
+            <input type="text" name="field3" id="field3">
+        </div>
+        <div>
+            <label for="field4">Not required - Min length 10 - Max length 25:</label>
+            <span id="field4Warning" class="req"></span>
+            <input type="text" name="field4" id="field4">
+        </div>
+        <div>
+            <label for="field5">Letters only:</label>
+            <span id="field5Warning" class="req"></span>
+            <input type="text" name="field5" id="field5">
+        </div>
+        <div id="radioDiv">
+            <label for="field6Y">Not Required:</label>
+            <input type="radio" name="field6" id="field6Y" value="yes" class="input-binary">Yes
+            <input type="radio" name="field6" id="field6N" value="no" class="input-binary">No
+        </div>
+        <div>
+            <label for="field7">Required if above field is Yes:</label>
+            <span id="field7Warning" class="req"></span>
+            <input type="text" name="field7" id="field7"><br>
+
+            <input type="submit" value="Validate" id="submit" class="input-submit">
+            <span id="submitWarning" class="req"></span>
+        </div>
+        <h4>Optional</h4>
+        <div>
+            <label for="field8">Valid email:</label>
+            <span id="field8Warning" class="req"></span>
+            <input type="text" name="field8" id="field8">
+        </div>
+    </form>
+</section>
+<script src="formFieldValidation.js"></script>
+</body>

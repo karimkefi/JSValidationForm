@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    font-family: Courier, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    overflow: auto;
+}
+
+div {
+    margin: 25px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+
+input {
+    width:100%;
+    border-radius: 5px;
+    padding: 6px 12px;
+    background-color: #b8cce7;
+}
+
+input:focus {
+}
+
+.input-binary {
+    width: 30px;
+}
+
+.input-submit {
+    width: 100px;
+    background-color: #53ad53;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.input-submit:hover {
+    background-color: #469a46;
+    cursor: pointer;
+}
+
+
+.text-input-field {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+}
+
+.req {
+    color: red;
+}
+
+.reqBox {
+    background-color: #ffa59e;
+}
+
+.notreqBox {
+    background-color: #b8cce7;
+}
+
+.testreqBox {
+    background-color: #6cf6bd;
+}
