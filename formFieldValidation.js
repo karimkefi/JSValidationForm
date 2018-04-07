@@ -67,10 +67,10 @@ function isValidEmail(elementID) {
     var validFormat = /\S+@\S+\S+./;
 
     if (validFormat.test(email)) {
-        //inputVal.style.backgroundColor = "";
+        inputVal.style.backgroundColor = "";
         return true
     } else {
-        //inputVal.style.backgroundColor = "pink";
+        inputVal.style.backgroundColor = "pink";
         return false
     }
 }
